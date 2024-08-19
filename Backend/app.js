@@ -11,6 +11,7 @@ import fileUpload from "express-fileupload";
 import path from "path"
 
 const app = express();
+const __dirname = path.resolve();
 
 dotenv.config();
 app.use(
