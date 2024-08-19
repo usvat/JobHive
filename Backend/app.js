@@ -36,7 +36,7 @@ app.use("/api/v1/job", jobRouter);
 app.use("/api/v1/application", applicationRouter);
 dbConnection();
 
-// http://localhost:4000 => backend,frontend
+//  => backend,frontend
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "/Frontend/dist")));

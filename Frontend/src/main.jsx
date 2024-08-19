@@ -13,7 +13,7 @@ const AppWrapper = () => {
     const fetchUser = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/user/getuser",
+          "/api/v1/user/getuser",
           { withCredentials: true }
         );
         setUser(data.user);
